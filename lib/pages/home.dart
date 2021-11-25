@@ -171,22 +171,26 @@ class HomePage extends StatelessWidget {
             top: isDesktop ? firstHeaderDesktopTopPadding : 21,
           ),
           children: [
+            //图库标题
             Padding(
               padding: const EdgeInsets.symmetric(
                 horizontal: _horizontalDesktopPadding,
               ),
               child: _GalleryHeader(),
             ),
+            //图库具体内容：走马灯卡片
             SizedBox(
               height: carouselHeight,
               child: _DesktopCarousel(children: carouselCards),
             ),
+            //类别标题
             Padding(
               padding: const EdgeInsets.symmetric(
                 horizontal: _horizontalDesktopPadding,
               ),
               child: _CategoriesHeader(),
             ),
+            //类别具体内容
             Container(
               height: 585,
               padding: const EdgeInsets.symmetric(
@@ -198,6 +202,7 @@ class HomePage extends StatelessWidget {
                 children: spaceBetween(28, desktopCategoryItems),
               ),
             ),
+            //footer部分
             Padding(
               padding: const EdgeInsetsDirectional.only(
                 start: _horizontalDesktopPadding,
