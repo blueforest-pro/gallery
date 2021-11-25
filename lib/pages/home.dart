@@ -202,7 +202,7 @@ class HomePage extends StatelessWidget {
                 children: spaceBetween(28, desktopCategoryItems),
               ),
             ),
-            //footer部分
+            //footer部分gi
             Padding(
               padding: const EdgeInsetsDirectional.only(
                 start: _horizontalDesktopPadding,
